@@ -1,0 +1,250 @@
+*{
+  box-sizing: border-box;
+   scroll-behavior: smooth;
+}
+::selection {
+    background: #c2efea; /* Change this to your desired color */
+    color: inherit; /* Keeps the text color the same */
+}
+
+a{
+  cursor: pointer;
+  color: #888 ;
+  text-decoration: none;
+}
+body{
+  color: #ffffff;
+  background-color: #000000;
+}
+img{
+  max-width: 100%;
+}
+main{
+  padding: 10px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+header{
+  display:flex;
+  justify-content:space-between;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  align-items: center;
+}
+header a{
+  text-decoration:none;
+  color: inherit;
+  font-weight: 500;
+}
+header a.logo{
+  font-weight: bold;
+  color: #555;
+  font-style: italic;
+  font-size: 2.5rem;
+}
+header nav{
+  display:flex;
+  gap: 24px;
+  background-color: rgba(149, 145, 145, 0.744);
+  border-radius: 25px;
+  font-size: 0.9em;
+  padding: 5px;
+}
+
+div.post{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 700px) {
+  div.post{
+      grid-template-columns: .9fr 1.1fr;
+  }
+}
+
+div.post div.texts h2{
+  margin:0;
+  font-size: 2rem;
+}
+div.post div.texts h2:hover{
+  color: #ffffffc4;
+}
+
+div.post div.texts a{
+  text-decoration:none;
+  color: inherit;
+}
+div.post p.info{
+  margin:24px 0;
+  color: #888;
+  font-size:1rem;
+  font-weight: bold;
+  display: flex;
+  gap: 10px;
+}
+div.post p.info a.author{
+  color:#2E2E2C;
+}
+div.post p.summary{
+  margin:10px 0;
+  line-height: 1.8rem;
+}
+
+form.login, form.register{
+  max-width: 350px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap:5px;
+  
+}
+input{
+  display: block;
+  margin-bottom: 5px;
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+button{
+  cursor: pointer;
+  width: 100%;
+  display: block;
+  background-color: #555;
+  border:0;
+  color: #fff;
+  border-radius: 5px;
+  padding: 15px ;
+}
+form.login h1, form.register h1{
+  text-align: center;
+}
+form.login h3, form.register h3{
+  text-align: center;
+}
+form.login img, form.register img{
+  width: 70%;
+  height: 75%;
+  border-radius: 50%;
+  
+  
+}
+div.post-page div.image{
+  max-height:300px;
+  display: flex;
+  overflow:hidden;
+}
+div.post-page div.image img{
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+}
+div.post-page a{
+  color:#888;
+  text-decoration: underline;
+}
+div.post-page h1{
+  text-align: center;
+  margin: 10px 0 5px;
+}
+div.post-page time{
+  text-align: center;
+  display: block;
+  font-size:1rem;
+  color:#aaa;
+  margin: 10px 0;
+}
+div.post-page div.author{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: .7rem;
+  font-weight: bold;
+}
+.image-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.image-overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.image-overlay {
+  cursor: pointer;
+}
+
+div.content p{
+  line-height: 1.7rem;
+  margin: 30px 0;
+}
+div.content li{
+  margin-bottom: 10px;
+}
+div.edit-row{
+  text-align: center;
+  margin-bottom: 20px;
+}
+div.post-page a.edit-btn{
+  background-color: #333;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #fff;
+  padding:15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+a svg{
+  height:20px;
+}
+
+
+footer{
+  margin-top: 50px;
+  text-align: center;
+  color: #888;
+}
+
+footer a{
+  color : rgb(94, 94, 179);
+  font-size: 1.4em;
+}
+footer a:hover{
+  color: rgb(182, 182, 251);
+}
+body.dark-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+body.dark-mode header nav {
+  background-color: #00000028;
+}
+.dark-mode h1, .dark-mode p {
+  color: #ffffff; /* Adjust as needed */
+}
+.corner {
+  display: flex;
+  width: 70px;
+  height: 25px;
+  gap:17px;
+
+}
+#github-icon{
+  width: 27px;
+  height: 27px;
+}
