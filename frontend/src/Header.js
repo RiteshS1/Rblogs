@@ -52,7 +52,7 @@ export default function Header() {
           </>
         )}
          <div class="corner">
-            <a href="https://github.com/your-repo" target="_blank">
+            <a href="https://github.com/RiteshS1/Rblogs" target="_blank">
                 <img src="/github.png" alt="GitHub" id="github-icon" />
             </a>
             <img
