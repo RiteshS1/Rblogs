@@ -2,6 +2,10 @@
 
 Welcome to **R Blogs - Read Emotions**, a powerful, full-stack blogging platform built using the MERN stack (MongoDB, Express, React, Node.js), designed to allow users to express their thoughts and emotions through blog posts. With the integration of AWS S3 for seamless image storage and deployments on Render and Vercel, this platform provides a sleek and responsive user experience.
 
+## Visit the deployment at [rblogs-xi.vercel.app](https://rblogs-xi.vercel.app/)
+ 
+
+
 ## 🚀 Features
 
 - **User Authentication**: Secure login and registration system for users to manage their blog posts.
