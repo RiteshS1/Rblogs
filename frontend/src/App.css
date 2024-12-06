@@ -3,8 +3,8 @@
    scroll-behavior: smooth;
 }
 ::selection {
-    background: #c2efea; /* Change this to your desired color */
-    color: inherit; /* Keeps the text color the same */
+    background: #C85567; 
+    color: inherit; 
 }
 
 a{
