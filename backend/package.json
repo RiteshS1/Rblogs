@@ -1,4 +1,12 @@
 {
+  "name": "r-blogs-backend",
+  "version": "1.0.0",
+  "description": "Backend for R Blogs, a full-stack blogging platform",
+  "main": "index.js",
+  "scripts": {
+  "start": "node index.js",
+  "dev": "nodemon index.js"
+},
   "dependencies": {
     "aws-sdk": "^2.1692.0",
     "bcrypt": "^5.1.1",
