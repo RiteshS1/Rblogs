@@ -99,13 +99,13 @@ app.get('/profile', (req, res) => {
   });
 });
 
-app.post('/logout', (req, res) => {
-  res.cookie('token', '', {
-    httpOnly: true,
-    secure: true,
-    sameSite: 'None',
-  }).json('ok');
-});
+res.cookie('token', '', {
+  httpOnly: true,
+  secure: process.env.NODE_ENV === 'production', 
+  sameSite: 'None',
+  expires: new Date(0), 
+}).json('ok');
+
 
 app.post('/post', uploadMiddleware.single('file'), async (req, res) => {
   const { originalname, path } = req.file;
