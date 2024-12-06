@@ -68,7 +68,7 @@ div.post div.texts h2{
   font-size: 2rem;
 }
 div.post div.texts h2:hover{
-  color: #ffffffc4;
+  color: rgb(182, 182, 251);
 }
 
 div.post div.texts a{
@@ -235,7 +235,7 @@ body.dark-mode header nav {
   background-color: #00000028;
 }
 .dark-mode h1, .dark-mode p {
-  color: #ffffff; /* Adjust as needed */
+  color: #000000;
 }
 .corner {
   display: flex;
