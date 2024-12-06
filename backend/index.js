@@ -99,12 +99,15 @@ app.get('/profile', (req, res) => {
   });
 });
 
-res.cookie('token', '', {
-  httpOnly: true,
-  secure: process.env.NODE_ENV === 'production', 
-  sameSite: 'None',
-  expires: new Date(0), 
-}).json('ok');
+app.post('/logout', (req, res) => {
+  res.cookie('token', '', {
+    httpOnly: true,
+    secure: process.env.NODE_ENV === 'production', 
+    sameSite: 'None',
+    expires: new Date(0), 
+  }).json('ok');
+});
+
 
 
 app.post('/post', uploadMiddleware.single('file'), async (req, res) => {
