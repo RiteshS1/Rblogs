@@ -19,7 +19,7 @@ export default function IndexPage() {
       ))}
 
       <footer className="footer">
-        <h3>Made with 💖 by <a href="https://x.com/delphic_RS" >RS</a></h3>
+        <h3>Made with 💖 by <a href="https://github.com/RiteshS1" >RS</a></h3>
       </footer>
     </>
   );
